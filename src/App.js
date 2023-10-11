@@ -18,7 +18,7 @@ const toggle = () => {
  setActive(false)
 }
 useEffect(() => {
-  setTimeout(() => (setActive(true)),1000)
+  setTimeout(() => (setActive(true)),2500)
 },[])
   return (
     <div>
