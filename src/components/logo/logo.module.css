@@ -1,0 +1,48 @@
+.logo{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 30px;
+}
+.logoImg{
+    width: 10%;
+    height: 15%;
+}
+.logoName{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+
+@media screen and (max-width:1200px) {
+    .logoImg{
+        width: 20%;
+        height: 25%;
+    }
+    .logoName{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:740px) {
+    .logoImg{
+        width: 30%;
+        height: 35%;
+    }
+    .logoName{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:520px) {
+    .logoImg{
+        width: 20%;
+        height: 25%;
+    }
+    .logoName{
+        font-size: 25px;
+    }
+    .logo{
+        gap: 10px;
+    }
+}

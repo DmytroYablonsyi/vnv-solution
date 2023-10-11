@@ -1,0 +1,17 @@
+.container{
+    margin: auto;
+    width: 70%;
+}
+.block{
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+}
+.header button{
+    background-color: black;
+    height: 95px;
+    color:white;
+}
+.item{
+    margin-top: 30px;
+}

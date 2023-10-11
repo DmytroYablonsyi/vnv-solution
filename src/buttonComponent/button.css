@@ -1,0 +1,138 @@
+
+.box{
+    color: white;
+    font-family: monospace;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    border: 1px solid rgb(144, 144, 144);
+    background-color: rgb(15, 17, 17);
+    border-radius: 45px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: all 2s box-shadow;
+    cursor:pointer;
+    margin: 10px auto;
+}
+.box:hover{
+    border: none;
+    box-shadow: 0px 5px 35px 0px rgb( 0,0,0,.1);
+}
+.box::before{
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background-color: #00f2ff;
+    box-shadow:1px 1px 10px  #00f2ff ;
+    border-radius: 45px;
+    z-index: -1;
+    animation: 2s clockwise infinite;
+}
+.box::after{
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    box-shadow:1px 1px 10px  #ae00ff ;
+    border-radius: 45px;
+    z-index: -1;
+    background-color: #ae00ff;
+    animation: 2s anticlockwise infinite;
+}
+
+@keyframes clockwise{
+    0%{
+        top: -2px;
+        left: 0px;
+    }
+    12%{
+        top: -1px;
+        left: 1px;
+    }
+    25%{
+        top: 0px;
+        left: 2px;
+    }
+    37%{
+        top: 1px;
+        left: 1px;
+    }
+    50%{
+        top: 2px;
+        left: 0px;
+    } 
+    62%{
+        top: 1px;
+        left: -1px;
+    }
+    75%{
+        top: 0px;
+        left: -2px;
+    }
+    87%{
+        top: -1px;
+        left: -1px;
+    } 
+    100%{
+        top: -2px;
+        left: 0px;
+    }
+}
+
+@keyframes anticlockwise{
+    0%{
+        top: -2px;
+        right: 0px;
+    }
+    12%{
+        top: -1px;
+        right: 1px;
+    }
+    25%{
+        top: 0px;
+        right: 2px;
+    }
+    37%{
+        top: 1px;
+        right: 1px;
+    }
+    50%{
+        top: 2px;
+        right: 0px;
+    } 
+    62%{
+        top: 1px;
+        right: -1px;
+    }
+    75%{
+        top: 0px;
+        right: -2px;
+    }
+    87%{
+        top: -1px;
+        right: -1px;
+    } 
+    100%{
+        top: -2px;
+        right: 0px;
+    }
+}
+@media screen and (max-width:740px) {
+   .box{
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+   }
+   .box::after, .box::before{
+    width: 90px;
+    height: 40px;
+    font-size: 12px;
+   }
+}

@@ -1,0 +1,14 @@
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 10%;
+}
+
+@media screen and (max-width:1200px) {
+    .block{
+        gap: 20%;
+        
+    }
+}

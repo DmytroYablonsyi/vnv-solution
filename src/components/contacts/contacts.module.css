@@ -1,0 +1,61 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+}
+.mail{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+.contacts{
+    border-bottom: 1px solid grey;
+}
+.container p{
+    transition: 0.3s;
+    padding: 5%;
+}
+
+.container p:hover{
+    color: grey;
+    transition: 0.3s;
+}
+.form{
+    width: 500px;
+    border: 2px solid white;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10%;
+}
+.form input{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+.form textarea{
+    color: white;
+    height: 100px;
+    background-color: black;
+    border: 1px solid white;
+}
+.formContainer{
+    margin-bottom: 40px;
+}
+@media screen and (max-width:800px) {
+    .container{
+       flex-direction: column;
+    }
+    .container p{
+        padding: 0;
+    }
+    .formContainer{
+        width: 80%;
+    }
+    .form{
+        width: 100%;
+    }
+}

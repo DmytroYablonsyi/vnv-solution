@@ -1,0 +1,24 @@
+.main{
+    padding-top: 30px;
+    border-top: 1px solid grey;
+    margin: 40px 10%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.main a{
+    margin:2% ;
+    text-decoration: none;
+    transition: 0.4s;
+    color: white;
+}
+.main h2{
+    color: grey;
+    
+}
+.main a:hover{
+    transition: 0.4s;
+    letter-spacing: 2px;
+    font-weight: 900;
+}

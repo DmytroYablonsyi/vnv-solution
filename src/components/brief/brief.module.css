@@ -1,0 +1,10 @@
+.paragraph{
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+.brief{
+    width: 60%;
+    margin: auto;
+}
