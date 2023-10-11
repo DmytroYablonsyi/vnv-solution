@@ -4,7 +4,6 @@ import classes from './contacts.module.css'
 
 const Contacts = () => {
     return(
-
         <>
         <CaptionHead name={"OUR CONTACTS"}/>
         <div className={classes.container}>
@@ -27,7 +26,6 @@ const Contacts = () => {
             </div>
         </div>
         </>
-       
     )
 }
 
