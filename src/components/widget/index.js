@@ -10,7 +10,6 @@ const Widget = ({toogleHandle}) => {
             <button onClick={() => toggle()} className={classes.closeIcon}>x</button>
             <p>Вперше на нашому сайті?</p>
             <a href="#">Безкоштовна консультація</a>
-
         </div>
     )
 }

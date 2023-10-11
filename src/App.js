@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
 import './App.css';
-import Faq from './components/FAQ';
-import About from './components/about';
+import Faq from './components/FAQ/faqList';
+import About from './components/about/aboutList';
 import Brief from './components/brief';
 import Logo from './components/logo';
-import Projects from './components/projects';
-import Services from './components/services';
+import Projects from './components/projects/projectsList';
+import Services from './components/services/servicesList';
 import SocialNetwork from './components/social_network';
 import Contacts from './components/contacts'
 import Widget from './components/widget';
@@ -25,18 +25,17 @@ useEffect(() => {
     {
       active && <Widget toogleHandle={toggle}/>
       }
-    <div className="App">
-        <Logo/>   
-        <About/> 
-        <Services/>
-        <Projects/>
-        <Contacts/>
-        <Brief/> 
-        <Faq/>  
-         <SocialNetwork/>
+        <div className="App">
+            <Logo/>   
+            <About/> 
+            <Services/>
+            <Projects/>
+            <Contacts/>
+            <Brief/> 
+            <Faq/>  
+            <SocialNetwork/>
+        </div>
     </div>
-    </div>
-
   );
 }
 

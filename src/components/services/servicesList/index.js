@@ -1,9 +1,9 @@
 import React from "react"
 import Carousel from 'react-bootstrap/Carousel';
-import { initialData } from "./initialData";
+import { initialData } from "../initialData/initialData";
 import classes from './services.module.css'
-import Button from "../../buttonComponent/button";
-import { CaptionHead } from "../../captionComponents/caption";
+import Button from "../../../buttonComponent/button";
+import { CaptionHead } from "../../../captionComponents/caption";
 
 
 
